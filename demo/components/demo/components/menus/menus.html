@@ -1,0 +1,26 @@
+<div class="slds-text-heading--label slds-m-bottom--small">Dropdown</div>
+
+<span class="slds-dropdown-trigger" [(nglDropdown)]="open">
+  <button class="slds-button slds-button--icon-border-filled" nglDropdownTrigger>
+    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint">
+      <use xlink:href="assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+    </svg>
+    <span class="slds-assistive-text">Show More</span>
+  </button>
+  <div class="slds-dropdown slds-dropdown--left">
+    <ul class="dropdown__list" role="menu">
+      <li class="slds-dropdown__item">
+        <a role="menuitem">
+          <p class="slds-truncate">Menu Item One</p>
+        </a>
+      </li>
+      <li class="slds-dropdown__item">
+        <a role="menuitem">
+          <p class="slds-truncate">Menu Item Two</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</span>
+
+<button type="button" nglButton="neutral" (click)="open = !open">Toggle</button>
