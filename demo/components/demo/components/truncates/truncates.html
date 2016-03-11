@@ -1,0 +1,11 @@
+<ngl-truncate [minSize]="minSize" [maxSize]="maxSize" [text]="text" [heading]="heading"></ngl-truncate>
+
+<div>
+  Size: <input type="number" min="1" max="12" [(ngModel)]="minSize"> of <input type="number" min="1" max="12" [(ngModel)]="maxSize">
+</div>
+<div class="slds-m-top--small">
+  Text: <input [(ngModel)]="text">
+</div>
+<div class="slds-m-top--small">
+  Heading: <input [(ngModel)]="heading">
+</div>

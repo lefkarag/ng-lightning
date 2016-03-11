@@ -11,6 +11,7 @@ import {DemoPaginations} from './components/paginations/paginations';
 import {DemoRatings} from './components/ratings/ratings';
 import {DemoSpinners} from './components/spinners/spinners';
 import {DemoTabs} from './components/tabs/tabs';
+import {DemoTruncates} from './components/truncates/truncates';
 
 export interface IComponent {
   key: string;
@@ -34,6 +35,7 @@ const components: any[] = [
   { key: 'ratings', component: DemoRatings },
   { key: 'spinners', component: DemoSpinners },
   { key: 'tabs', component: DemoTabs },
+  { key: 'truncates', component: DemoTruncates },
 ].sort((a, b) => a.key.localeCompare(b.key));
 
 const content = {};
